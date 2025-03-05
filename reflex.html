@@ -18,8 +18,8 @@
     <p id = "target">Your time</p>
     <p id = "counter">Count</p>
 
-    <button type = "button" onclick = "recordTime()">Go</button>
-    <button type = "button">Halt</button>
+    <button type = "button" onclick = "beginTime()">Go</button>
+    <button type = "button" onclick = "recordTime()">Halt</button>
 
     <script>
         let haltTime = undefined;
@@ -27,6 +27,23 @@
         function recordTime() {
             haltTime = Date.now();
             console.log(haltTime);
+        }
+
+        function beginTime() {
+            haltTime = undefined;
+            for (let i = 0; i <= 5; i++) {
+                setTimeout(() => {document.getElementById("counter").innerText = i;}, (5 - i) * 1000);
+            }
+
+            setTimeout(() => {
+                if (haltTime === undefined) {
+                    document.getElementById("target").innerText = "Not soon enough";
+                } else {
+                    let targetTime = Date.now();
+                    let time = targetTime - haltTime;
+                    document.getElementById("target").innerText = "Time was " + time + " ms";
+                }
+            }, 5000);
         }
     </script>
 
