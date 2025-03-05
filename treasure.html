@@ -3,7 +3,7 @@
   <style>
     .grid-container {
       display: grid;
-      grid-template-columns: 125px 125px 125px 125px 125px;
+      grid-template-columns: 125px 125px 125px 125px 125px 125px 125px;
     }
   </style>
   <head>
@@ -22,56 +22,119 @@
     <h2>Ty Digs for Treasure</h2>
     <br>
     <p>Click on the locations to find silver and gold, watch out for the rattlesnake</p>
-    <p id = "locations">Number of locations checked is zero.</p>
-    <p id = "score">Score is zero</p>
-    <p>Click for help</p>
-    <p id = "help">Help report</p>
+    <p id = "locations">Number of locations checked: 0</p>
+    <p id = "score">Score: 0</p>
+    <p id = "help" onclick = "help()">Click for help</p>
+    <p>report</p>
 
     <div class = "grid-container">
       <div>
-        <div><img src = "Cactus.jpg" alt = "Search Location" height = "150" width = "125"></div>
-        <div><img src = "Cactus.jpg" alt = "Search Location" height = "150" width = "125"></div>
-        <div><img src = "Cactus.jpg" alt = "Search Location" height = "150" width = "125"></div>
-        <div><img src = "Cactus.jpg" alt = "Search Location" height = "150" width = "125"></div>
-        <div><img src = "Cactus.jpg" alt = "Search Location" height = "150" width = "125"></div>
-        <div><img src = "Cactus.jpg" alt = "Search Location" height = "150" width = "125"></div>
-        <div><img src = "Cactus.jpg" alt = "Search Location" height = "150" width = "125"></div>
+        <div><img src = "Cactus.jpg" id = "0" height = "150" width = "125" onclick = "check(0)"></div>
+        <div><img src = "Cactus.jpg" id = "7" height = "150" width = "125" onclick = "check(7)"></div>
+        <div><img src = "Cactus.jpg" id = "14" height = "150" width = "125" onclick = "check(14)"></div>
+        <div><img src = "Cactus.jpg" id = "21" height = "150" width = "125" onclick = "check(21)"></div>
+        <div><img src = "Cactus.jpg" id = "28" height = "150" width = "125" onclick = "check(28)"></div>
       </div>
       <div>
-        <div><img src = "Cactus.jpg" alt = "Search Location" height = "150" width = "125"></div>
-        <div><img src = "Cactus.jpg" alt = "Search Location" height = "150" width = "125"></div>
-        <div><img src = "Cactus.jpg" alt = "Search Location" height = "150" width = "125"></div>
-        <div><img src = "Cactus.jpg" alt = "Search Location" height = "150" width = "125"></div>
-        <div><img src = "Cactus.jpg" alt = "Search Location" height = "150" width = "125"></div>
-        <div><img src = "Cactus.jpg" alt = "Search Location" height = "150" width = "125"></div>
-        <div><img src = "Cactus.jpg" alt = "Search Location" height = "150" width = "125"></div>
+        <div><img src = "Cactus.jpg" id = "1" height = "150" width = "125" onclick = "check(1)"></div>
+        <div><img src = "Cactus.jpg" id = "8" height = "150" width = "125" onclick = "check(8)"></div>
+        <div><img src = "Cactus.jpg" id = "15" height = "150" width = "125" onclick = "check(15)"></div>
+        <div><img src = "Cactus.jpg" id = "22" height = "150" width = "125" onclick = "check(22)"></div>
+        <div><img src = "Cactus.jpg" id = "29" height = "150" width = "125" onclick = "check(29)"></div>
       </div>
       <div>
-        <div><img src = "Cactus.jpg" alt = "Search Location" height = "150" width = "125"></div>
-        <div><img src = "Cactus.jpg" alt = "Search Location" height = "150" width = "125"></div>
-        <div><img src = "Cactus.jpg" alt = "Search Location" height = "150" width = "125"></div>
-        <div><img src = "Cactus.jpg" alt = "Search Location" height = "150" width = "125"></div>
-        <div><img src = "Cactus.jpg" alt = "Search Location" height = "150" width = "125"></div>
-        <div><img src = "Cactus.jpg" alt = "Search Location" height = "150" width = "125"></div>
-        <div><img src = "Cactus.jpg" alt = "Search Location" height = "150" width = "125"></div>
+        <div><img src = "Cactus.jpg" id = "2" height = "150" width = "125" onclick = "check(2)"></div>
+        <div><img src = "Cactus.jpg" id = "9" height = "150" width = "125" onclick = "check(9)"></div>
+        <div><img src = "Cactus.jpg" id = "16" height = "150" width = "125" onclick = "check(16)"></div>
+        <div><img src = "Cactus.jpg" id = "23" height = "150" width = "125" onclick = "check(23)"></div>
+        <div><img src = "Cactus.jpg" id = "30" height = "150" width = "125" onclick = "check(30)"></div>
       </div>
       <div>
-        <div><img src = "Cactus.jpg" alt = "Search Location" height = "150" width = "125"></div>
-        <div><img src = "Cactus.jpg" alt = "Search Location" height = "150" width = "125"></div>
-        <div><img src = "Cactus.jpg" alt = "Search Location" height = "150" width = "125"></div>
-        <div><img src = "Cactus.jpg" alt = "Search Location" height = "150" width = "125"></div>
-        <div><img src = "Cactus.jpg" alt = "Search Location" height = "150" width = "125"></div>
-        <div><img src = "Cactus.jpg" alt = "Search Location" height = "150" width = "125"></div>
-        <div><img src = "Cactus.jpg" alt = "Search Location" height = "150" width = "125"></div>
+        <div><img src = "Cactus.jpg" id = "3" height = "150" width = "125" onclick = "check(3)"></div>
+        <div><img src = "Cactus.jpg" id = "10" height = "150" width = "125" onclick = "check(10)"></div>
+        <div><img src = "Cactus.jpg" id = "17" height = "150" width = "125" onclick = "check(17)"></div>
+        <div><img src = "Cactus.jpg" id = "24" height = "150" width = "125" onclick = "check(24)"></div>
+        <div><img src = "Cactus.jpg" id = "31" height = "150" width = "125" onclick = "check(31)"></div>
       </div>
       <div>
-        <div><img src = "Cactus.jpg" alt = "Search Location" height = "150" width = "125"></div>
-        <div><img src = "Cactus.jpg" alt = "Search Location" height = "150" width = "125"></div>
-        <div><img src = "Cactus.jpg" alt = "Search Location" height = "150" width = "125"></div>
-        <div><img src = "Cactus.jpg" alt = "Search Location" height = "150" width = "125"></div>
-        <div><img src = "Cactus.jpg" alt = "Search Location" height = "150" width = "125"></div>
-        <div><img src = "Cactus.jpg" alt = "Search Location" height = "150" width = "125"></div>
-        <div><img src = "Cactus.jpg" alt = "Search Location" height = "150" width = "125"></div>
+        <div><img src = "Cactus.jpg" id = "4" height = "150" width = "125" onclick = "check(4)"></div>
+        <div><img src = "Cactus.jpg" id = "11" height = "150" width = "125" onclick = "check(11)"></div>
+        <div><img src = "Cactus.jpg" id = "18" height = "150" width = "125" onclick = "check(18)"></div>
+        <div><img src = "Cactus.jpg" id = "25" height = "150" width = "125" onclick = "check(25)"></div>
+        <div><img src = "Cactus.jpg" id = "32" height = "150" width = "125" onclick = "check(32)"></div>
+      </div>
+      <div>
+        <div><img src = "Cactus.jpg" id = "5" height = "150" width = "125" onclick = "check(5)"></div>
+        <div><img src = "Cactus.jpg" id = "12" height = "150" width = "125" onclick = "check(12)"></div>
+        <div><img src = "Cactus.jpg" id = "19" height = "150" width = "125" onclick = "check(19)"></div>
+        <div><img src = "Cactus.jpg" id = "26" height = "150" width = "125" onclick = "check(26)"></div>
+        <div><img src = "Cactus.jpg" id = "33" height = "150" width = "125" onclick = "check(33)"></div>
+      </div>
+      <div>
+        <div><img src = "Cactus.jpg" id = "6" height = "150" width = "125" onclick = "check(6)"></div>
+        <div><img src = "Cactus.jpg" id = "13" height = "150" width = "125" onclick = "check(13)"></div>
+        <div><img src = "Cactus.jpg" id = "20" height = "150" width = "125" onclick = "check(20)"></div>
+        <div><img src = "Cactus.jpg" id = "27" height = "150" width = "125" onclick = "check(27)"></div>
+        <div><img src = "Cactus.jpg" id = "34" height = "150" width = "125" onclick = "check(34)"></div>
       </div>
   </body>
+  <script>
+      let ids = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34"];
+      let score = 0;
+      let locationsVisited = 0;
+      let lastLocation = 0;
+      let silverLocations = [2, 5, 11, 21, 32];
+      let goldLocation = 15;
+      let snakeLocation = 20;
+      let gameOver = false;
+
+      function check(position){
+        if (gameOver){
+          return;
+        }
+        let img = document.getElementById(ids[position]);
+        img.onclick = null;
+        if(position == goldLocation){
+          img.src = "Nugget.jpg";
+          score += 5;
+        }else if(silverLocations.includes(position)){
+          img.src = "Coin.jpg"
+          score += 3;
+        }else if(position == snakeLocation){
+          img.src = "Snake.jpg"
+          score -= 3;
+          gameOver = true;
+        }else{
+          img.src = "Pottery.jpg"
+          score += 1;
+        }
+        locationsVisited ++;
+        lastLocation = position;
+        document.getElementById("locations").innerText = `Number of locations checked: ${locationsVisited}`;
+        document.getElementById("score").innerText = `Score: ${score}`;
+      }
+
+      function help(){
+        let row = Math.floor(lastLocation / 7);
+        let col = (lastLocation % 7);
+        let close = [(lastLocation - 1), (lastLocation + 1), (lastLocation - 7), (lastLocation + 7)];
+
+        for(let element of close){
+          if(silverLocations.includes(element)){
+            document.getElementById("help").innerText = "Click for help: Clink";
+            return;
+          }
+        }
+
+        let snakeRow = Math.floor(snakeLocation / 7);
+        let snakeCol = snakeLocation % 7;
+
+        if ((Math.abs(snakeRow - row) <= 1) && (Math.abs(snakeCol - col) <= 1)) {
+          document.getElementById("help").innerText = "Click for help: Rattle";
+        }else{
+          document.getElementById("help").innerText = "Click for help: Wind";
+        }
+      }
+
+  </script>
 </html>
