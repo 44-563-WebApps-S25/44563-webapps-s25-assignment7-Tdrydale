@@ -35,7 +35,9 @@
 	
 		<p> Enter text then press the button to create an new element of type div and then add it to the container.</p>
 		<input type = "text" id = "textInput" placeholder = "Enter text">
+		<button onclick="addFront()">Add front</button>
 		<button onclick="addEnd()">Add end</button>
+		<button onclick="remove()">Remove</button>	
 	
 	
 	</body>
@@ -48,16 +50,21 @@
 			document.getElementById("target").appendChild(div);
    		}
 
-		function makeNewDiv(){
-			/* make the div and its text */
-			let element = document.createElement("div")
-			element.innerHTML = "an item after 3"
-			element.style.color = "orange"
+		function remove() {
+			let divListItems = document.getElementsByClassName("divlist");
+			if (divListItems.length > 0) {
+				let middleDiv = Math.floor(divListItems.length / 2);
+				divListItems[middleDiv].remove();
+        	}
+   	 	}
 
-			/* add it to the container */
-			let container = document.getElementById('target')
-			container.appendChild(element)
-			
-		}
+    	function addFront() {
+			let text = document.getElementById("textInput").value;
+			let div = document.createElement("div");
+			div.innerText = text;
+			div.className = "divlist";
+			let containerDiv = document.getElementById("target");
+			containerDiv.insertBefore(div, containerDiv.firstChild);
+		}	
 	</script>
 </html>	
